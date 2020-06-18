@@ -1,6 +1,13 @@
 import React from "react";
-import Dashboard from "../src/components/Dashboard";
+import Link from "next/link";
+import Main from "../src/components/layouts/main";
 
 export default function Index() {
-  return <Dashboard></Dashboard>;
+  return (
+    <Main>
+      <Link href="/about">
+        <a> Move to about</a>
+      </Link>
+    </Main>
+  );
 }
